@@ -1,0 +1,19 @@
+package br.com.estudo.java8;
+
+public class Main {
+
+	
+	public static void main(String[] args) {
+		
+		Runnable run = new Runnable() {
+			public void run() {
+				
+				System.out.println("Teste");
+			}
+		};
+		
+		new Thread(run).start();
+		
+		Runnable run1 -> System.out.println("Teste Lambda");
+	}
+}

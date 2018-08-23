@@ -1,0 +1,52 @@
+package br.com.estudo.java8;
+
+import java.util.Arrays;
+import java.util.List;
+import java.util.Optional;
+import java.util.stream.Collectors;
+
+public class Main {
+
+	public static void main(String[] args) {
+
+		// Runnable run = new Runnable() {
+		// public void run() {
+		//
+		// System.out.println("Teste");
+		// }
+		// };
+		//
+		// new Thread(run).start();
+		//
+		// Runnable run1= () -> System.out.println("Teste Lambda");
+		// new Thread( () -> System.out.println("Teste Lambda
+		// capsulada")).start();
+		// }
+
+//		List<String> lista = Arrays.asList("Israel", "Akio");
+//
+//		lista.forEach(l -> System.out.println(l));
+//
+//		List<String> lista2 = lista.stream().filter(l -> l.startsWith("A")).collect(Collectors.toList());
+//		
+//		System.out.println("teste");
+//
+//		lista2.forEach(l -> System.out.println(l));
+//		
+//		lista2.forEach(Pessoa::fala);
+		
+		List<String> list = Arrays.asList("a" , "b","c","d", "e", "f", "g", null);
+		
+//		String resultado = list.stream().collect(Collectors.joining(","));
+//		
+//		System.out.println(resultado);
+		
+			list.forEach(l -> {
+				Optional<String> op = Optional.of(l);
+				op.ifPresent(System.out::println);
+				
+			});
+		
+	}
+
+}

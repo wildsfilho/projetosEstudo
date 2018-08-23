@@ -1,0 +1,10 @@
+package br.com.estudo.java8;
+
+public class Pessoa {
+	
+	public static void fala(String s){
+		
+		System.out.println(s+"- RSRSR");
+	}
+
+}
